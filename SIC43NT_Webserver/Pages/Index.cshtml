@@ -1,7 +1,7 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "SIC43NT Demonstration";
+    ViewData["Title"] = "MARKSS INFOTECH LIMITED";
 }
 
 <style>
@@ -16,10 +16,10 @@
     }
 </style>
 
-<h1>SIC43NT Demonstration</h1>
+<h1>MARKSS INFOTECH Demonstration</h1>
 <table style="width:75%">
     <tr>
-        <th>UID[7]</th>
+        <th>UID</th>
         <td colspan="3">@Model.uid</td>
     </tr>
     <tr>
@@ -37,6 +37,14 @@
         <td>@Model.flagTamperTag</td>
         <td>@Model.flagTamperServer</td>
         <td>@Model.flagTamperDecision</td>
+         @if (@Model.flagTamperTag == "AA")
+        {
+            <img id="qrCode" src="~/images/Plant.jpg" class="img" alt="My image" width="50" height="50" />
+        }
+         @if (@Model.flagTamperTag == "-")
+        {
+            <img id="qrCode" src="~/images/AssetBG.jpg" class="img" alt="My image" width="50" height="50" />
+        }
     </tr>
     <tr>
         <th>Time Stamp(DEC)</th>

@@ -12,7 +12,7 @@ namespace SIC43NT_Webserver.Pages
 
         public void OnGet()
         {
-            Message = "Your application description page.";
+            Message = "Markss Infotech Limited offers innovative, cost-effective automatic identification solutions for business and industry. Customized Solutions from MARKSS represent the most innovative bar coding products on the market today. We offers complete solutions-hardware, software & service-to help our customers to meet the challenges of dynamic & competitive business environment.";
         }
     }
 }
